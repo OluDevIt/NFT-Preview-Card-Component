@@ -1,0 +1,118 @@
+:root {
+  /* Primary */
+
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+
+  /* Neutral */
+
+
+  --very-dark-blue-m: hsl(217, 54%, 11%); /* Main Background */
+  --very-dark-blue-c: hsl(216, 50%, 16%); /* Card Background */
+  --very-dark-blue-l: hsl(215, 32%, 27%); /* Line Background */
+  --white: hsl(0, 0%, 100%);
+}
+
+/* Font-Weights: 300, 400, 600 */
+
+/* Start of CSS */
+
+
+body {
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--very-dark-blue-m);
+}
+
+section {
+  width: 20%;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: var(--very-dark-blue-c);
+  overflow: hidden;
+}
+
+.main-image {
+  border-radius: 10px;
+  max-width: 100%;
+  overflow: none;
+}
+
+.main-image:hover {
+  background-image: url(icon-view.svg);
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+h1 {
+  font-weight: 600;
+  color: var(--white);
+  word-wrap: break-word;
+}
+
+h1:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+.paragraph {
+  font-weight: 400;
+  color: var(--soft-blue);
+  word-wrap: break-word;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.eth {
+  font-weight: 400;
+  color: var(--cyan);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.time {
+  font-weight: 400;
+  color: var(--soft-blue);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.profile-info {
+  display: flex;
+  gap: 10px;
+}
+
+hr {
+  background-color: var(--very-dark-blue-l);
+  border: none;
+  height: 1.5px;
+}
+
+.jules {
+  border: 1.98px solid var(--white);
+  border-radius: 50%;
+}
+
+.creation {
+  font-weight: 400;
+  color: var(--soft-blue);
+}
+
+.name {
+  font-weight: 400;
+  color: var(--white);
+}
+
+.name:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
